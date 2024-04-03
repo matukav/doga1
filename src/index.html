@@ -13,13 +13,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
     <title>Hexadecagon</title>
 </head>
 <body>
     <div class="container">
-        <h1>Hexadecagon Terület Számítás</h1>
+        <header>
+            <h1>Hexadecagon Területének Kiszámítása</h1>
+            <p>Viola Máté, I/2/N, 2024. 04. 03.</p>
+        </header>
+        <div class="form">
+            <div class="input">
+                <label for="sides" class="form-label mt-5">Kérem adja meg a Hexadecagon oldalainak hosszát:</label>
+                <input type="text" id="sides" class="form-control">
+            </div>
+            <div>
+                <button id="countButton" class="btn btn-primary mt-3">Számlálás</button>
+            </div>
+            <div class="input">
+                <label for="T" class="form-label mt-4">Hexadecagon Területe:</label>
+                <input type="text" id="T" class="form-control">
+            </div>
+        </div>
     </div>
-    
+
     <script src="app.js"></script>
 </body>
 </html>
